@@ -1,4 +1,4 @@
-# Ocean-physics
+# Fourier-Ocean-Physics
 
 This implementation uses the classic **Tessendorf model** for ocean simulation. It generates a 1D frequency spectrum based on wind direction, evolves the wave phases over time using the physical dispersion relation **($\omega = \sqrt{gk}$)**, and converts the frequencies back into physical spatial heights using an Inverse Discrete Fourier Transform (IDFT).
 
