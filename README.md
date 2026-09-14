@@ -6,3 +6,5 @@ This implementation uses the classic **Tessendorf model** for ocean simulation. 
 - **The Spectrum (P)**: Rather than manually creating individual sine waves, we assign random Gaussian amplitudes to hundreds of frequencies at once. Lower frequencies (large swells) are assigned exponentially higher energy than high frequencies (choppy ripples).
 - **Dispersion ($\omega = \sqrt{g\vert{}k\vert{}}$)**: In real oceans, large waves travel faster than small waves. The square-root gravity dispersion relation enforces this behavior perfectly, stopping the surface from looking like rigid moving noise.
 - **Complex Conjugation**: By feedingd `conj(h0[-k])` into the time-step equation alongside `h0[k]`, we mathematically guarantee that when the imaginary frequencies are collapsed by the IDFT, the resulting physical height data is strictly real (no floating-point phasing errors).
+
+![fourier-ocean-physics](images/fourier-ocean-physics.png)
