@@ -2,8 +2,8 @@ CC = gcc
 CFLAGS = -Wall -Wextra -O3
 LDFLAGS = -lSDL2 -lm
 
-TARGET = water-physics
-SRCS = water-physics.c
+TARGET = ocean-physics
+SRCS = ocean-physics.c
 OBJS = $(SRCS:.c=.o)
 
 .PHONY: all clean
