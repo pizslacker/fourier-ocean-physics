@@ -1,6 +1,6 @@
 # Fourier-Ocean-Physics
 
-This implementation uses the classic **Tessendorf model** for ocean simulation. It generates a 1D frequency spectrum based on wind direction, evolves the wave phases over time using the physical dispersion relation **($\omega = \sqrt{gk}$)**, and converts the frequencies back into physical spatial heights using an Inverse Discrete Fourier Transform (IDFT).
+This implementation uses the **Tessendorf model** for ocean simulation. It generates a 1D frequency spectrum based on wind direction, evolves the wave phases over time using the physical dispersion relation **($\omega = \sqrt{gk}$)**, and converts the frequencies back into physical spatial heights using an Inverse Discrete Fourier Transform (IDFT).
 
 - **Painter's Algorithm** (drawing from back to front) and `SDL_RenderGeometry` to construct solid, shaded polygons for the faces of the water block.
 - **The Spectrum (P)**: Rather than manually creating individual sine waves, we assign random Gaussian amplitudes to hundreds of frequencies at once. Lower frequencies (large swells) are assigned exponentially higher energy than high frequencies (choppy ripples).
