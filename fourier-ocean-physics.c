@@ -116,7 +116,7 @@ int main(int argc, char* argv[]) {
     (void)argc; (void)argv;
     if (SDL_Init(SDL_INIT_VIDEO) < 0) return 1;
 
-    SDL_Window* window = SDL_CreateWindow("Fourier Ocean - Drag to Rotate", 
+    SDL_Window* window = SDL_CreateWindow("Fourier Ocean Physics - Drag to Rotate", 
         SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_SHOWN);
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
